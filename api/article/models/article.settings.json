@@ -24,14 +24,9 @@
       "type": "richtext",
       "required": true
     },
-    "slug": {
+    "url": {
       "type": "uid",
-      "targetField": "title",
       "required": true
-    },
-    "category": {
-      "model": "category",
-      "via": "articles"
     },
     "image": {
       "model": "file",
@@ -44,10 +39,6 @@
       "plugin": "upload",
       "required": true,
       "pluginOptions": {}
-    },
-    "author": {
-      "via": "articles",
-      "model": "writer"
     }
   }
 }
